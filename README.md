@@ -51,7 +51,7 @@ sia.project.1.wi.data/
 
 | File | Description |
 |------|--------------|
-| **df_shiny_wi.csv / df_shiny_wi** | 
-| **df_osf_wi.csv / df_osf_wi.xlsx** |
+| **df_shiny_wi.csv / df_shiny_wi.xlsx** | Dataframe for Shiny
+| **df_osf_wi.csv / df_osf_wi.xlsx** | Dataframe for OSF
 
 
