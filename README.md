@@ -1,6 +1,6 @@
 # sia.project.1.wi.data
 
-Data-wrangling pipeline to build **Shiny-ready** and **OSF-ready** datasets for the Wearables Inventory (WI).  
+Data-wrangling pipeline to build **Shiny-ready** and **OSF-ready** datasets for the SiA Wearable Database Interface.  
 The workflow follows best practices from _[Reproducible Science in Ecology & Evolution](https://ecorepsci.github.io/reproducible-science/)_ — emphasising tidy data, version control, scripted processing, and reproducible environments.
 
 ---
