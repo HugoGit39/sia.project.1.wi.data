@@ -34,7 +34,7 @@ sia.project.1.wi.data/
 └─ README.md
 ```
 
-## 📥 Inputs (expected in `data/raw/`)
+## Inputs (expected in `data/raw/`)
 
 | File | Description |
 |------|--------------|
@@ -45,17 +45,13 @@ sia.project.1.wi.data/
 | **rvu_synthesis.xlsx** | Validity, reliability, and usability summaries |
 | **expert_scores.xlsx** | Expert-based scoring (e.g., short-term, long-term) |
 
-> ⚠️ **Important:**  
-> Keep raw files **out of version control**.  
-> Add large or sensitive files to `.gitignore`.
-
 ---
 
-## 📤 Outputs (written to `data/output/data/`)
+## Outputs (written to `data/output/data/`)
 
 | File | Description |
 |------|--------------|
-| **df_shiny_wi.csv / df_shiny_wi.xlsx** | One row per device, joined metadata (signals not flattened) |
-| **signals_long.csv / signals_long.xlsx** | Per-signal long table (source of truth for signal details) |
-| **df_shiny_wi_flags.csv / df_shiny_wi_flags.xlsx** | Optional availability matrix for quick UI visualisations |
+| **df_shiny_wi.csv / df_shiny_wi** | 
+| **df_osf_wi.csv / df_osf_wi.xlsx** |
+
 
