@@ -192,6 +192,8 @@ df_shiny_wi <- devices %>%
   left_join(rvu_wide,         by = "device_id")
 
 # * 11 write final shiny df----
+saveRDS(df_shiny_wi, here("data", "processed", "df_shiny_wi.rds"))
+saveRDS(df_shiny_wi, here("output","data", "df_shiny_wi.rds"))
 write_csv(df_shiny_wi, here("output","data", "df_shiny_wi.csv"))
 write_xlsx(list(df_shiny_wi = df_shiny_wi), here("output","data", "df_shiny_wi.xlsx"))
 
