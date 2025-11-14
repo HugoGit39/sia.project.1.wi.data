@@ -163,12 +163,12 @@ df_shiny_rvu <- rvu %>%
   )
 
 # * 9 create final shiny df ----
-df_shiny_wi <- devices %>%
-  left_join(df_shiny_scores,      by = "device_id") %>%
-  left_join(df_shiny_specs,       by = "device_id") %>%
-  left_join(df_shiny_signals,     by = "device_id") %>%
+df_shiny_wi <- df_shiny_scores %>%
+  left_join(df_shiny_devices,   by = "device_id") %>%
+  left_join(df_shiny_specs,     by = "device_id") %>%
+  left_join(df_shiny_signals,   by = "device_id") %>%
   left_join(df_shiny_data_access, by = "device_id") %>%
-  left_join(df_shiny_rvu,         by = "device_id")
+  left_join(df_shiny_rvu,       by = "device_id")
 
 # * 10 write final shiny df ----
 saveRDS(df_shiny_wi, here("data", "processed", "df_shiny_wi.rds"))
